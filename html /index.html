@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-200">
+    <!-- component -->
+    <section class="flex flex-col h-auto justify-center items-center">
+      <form action="" class="w-3/4 md:w-1/2 mx-auto m-10">
+        <div class="mb-6">
+          <input
+            id="product-name"
+            type="text"
+            placeholder="Product Name"
+            class="bg-gray-50 border border-gray-300 text-gray-700 text-lg rounded-lg focus:border-blue-600 block w-full p-2.5 outline-none focus:scale-105 duration-200"
+          />
+        </div>
+        <div class="mb-6">
+          <input
+            id="product-price"
+            type="text"
+            placeholder="Product Price"
+            class="bg-gray-50 border border-gray-300 text-gray-700 text-lg rounded-lg focus:border-blue-600 block w-full p-2.5 outline-none focus:scale-105 duration-200"
+          />
+        </div>
+        <div class="mb-6">
+          <input
+            id="product-category"
+            type="text"
+            placeholder="Product Category"
+            class="bg-gray-50 border border-gray-300 text-gray-700 text-lg rounded-lg focus:border-blue-600 block w-full p-2.5 outline-none focus:scale-105 duration-200"
+          />
+        </div>
+        <div class="mb-6">
+          <input
+            id="product-desc"
+            type="text"
+            placeholder="Product Description"
+            class="bg-gray-50 border border-gray-300 text-gray-700 text-lg rounded-lg focus:border-blue-600 block w-full p-2.5 outline-none focus:scale-105 duration-200"
+          />
+        </div>
+        <button
+          class="bg-blue-500 hover:bg-blue-700 text-white text-xl font-bold py-2 px-4 rounded w-full"
+          id="btn-add"
+        >
+          Add Product
+        </button>
+      </form>
+      <div class="mb-6 w-3/4 md:w-1/2 mx-auto mt-5">
+        <input
+          id="search"
+          type="text"
+          placeholder="Search Products..."
+          class="bg-gray-50 border border-gray-300 text-gray-700 text-lg rounded-lg focus:border-blue-600 block w-full p-2.5 outline-none focus:scale-110 duration-200"
+        />
+      </div>
+      <table class="w-10/12 lg:w-9/12 border-collapse block md:table">
+        <thead class="block md:table-header-group">
+          <tr
+            class="border border-grey-500 md:border-none block md:table-row absolute -top-full md:top-auto -left-full md:left-auto md:relative"
+          >
+            <th
+              class="bg-gray-600 p-2 text-white font-bold md:border md:border-grey-500 text-left block md:table-cell"
+            >
+              Product Name
+            </th>
+            <th
+              class="bg-gray-600 p-2 text-white font-bold md:border md:border-grey-500 text-left block md:table-cell"
+            >
+              Product Price
+            </th>
+            <th
+              class="bg-gray-600 p-2 text-white font-bold md:border md:border-grey-500 text-left block md:table-cell"
+            >
+              Product Category
+            </th>
+            <th
+              class="bg-gray-600 p-2 text-white font-bold md:border md:border-grey-500 text-left block md:table-cell"
+            >
+              Product Desc
+            </th>
+            <th
+              class="bg-gray-600 p-2 text-white font-bold md:border md:border-grey-500 text-left block md:table-cell"
+            >
+              Actions
+            </th>
+          </tr>
+        </thead>
+        <tbody class="block md:table-row-group" id="table-body"></tbody>
+      </table>
+    </section>
+    <script src="../js/script.js"></script>
+  </body>
+</html>
